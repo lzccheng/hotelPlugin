@@ -1,0 +1,34 @@
+/*
+	author: 赖志成 (Lai Zhicheng);
+	date: 2018-5-5;
+ */
+.lzcBox{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+.lzcBox .lzcDateBox{
+	height: 100%;
+	position: relative;
+	background-color: #ffffff;
+	margin-top: 35%;
+}
+.lzcBox .lzcDateBox .lzcFixed .lzcTitle{
+	color: red;
+	padding: 8px 0;
+	text-align: center;
+}
+.lzcBox .lzcDateBox .lzcFixed{
+
+}
+.lzcBox .lzcDateBox .lzcFixed .lzcTitle .lzcTitle_{
+	color: #555;
+}
+.lzcBox .lzcDateBox .lzcFixed .lzcTitle .lzcIcon{
+	color: #50D3A1;
+	padding: 3px 8px;
+	position: absolute;
+	left: 0;
+	top: 5px;
+}
