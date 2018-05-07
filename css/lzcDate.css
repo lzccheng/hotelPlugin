@@ -9,26 +9,97 @@
 	background-color: rgba(0,0,0,0.5);
 }
 .lzcBox .lzcDateBox{
-	height: 100%;
+	height: 80%;
 	position: relative;
-	background-color: #ffffff;
+	background-color: #eeeeee;
 	margin-top: 35%;
+	overflow-y: auto; 
+}
+.lzcBox .lzcDateBox .lzcFixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin-top: 35%;
+	background-color: #ffffff;
 }
 .lzcBox .lzcDateBox .lzcFixed .lzcTitle{
 	color: red;
 	padding: 8px 0;
 	text-align: center;
 }
-.lzcBox .lzcDateBox .lzcFixed{
-
-}
 .lzcBox .lzcDateBox .lzcFixed .lzcTitle .lzcTitle_{
 	color: #555;
 }
 .lzcBox .lzcDateBox .lzcFixed .lzcTitle .lzcIcon{
-	color: #50D3A1;
+	color: #3DB788;
 	padding: 3px 8px;
 	position: absolute;
 	left: 0;
 	top: 5px;
+}
+.lzcBox .lzcDateBox .lzcFixed .lzcDay{
+	display: flex;
+	justify-content: space-around;
+	padding: 3px 0 8px;
+	border-bottom: 1px solid #ccc;
+}
+.lzcBox .lzcDateBox .lzcFixed .lzcDay .lzcDayItem:last-child{
+	color: #3DB788;
+}
+.lzcBox .lzcDateBox .lzcFixed .lzcDay .lzcDayItem:first-child{
+	color: #3DB788;
+}
+.lzcBox .lzcDateBox .lzcMonth{
+	margin-top: 70px;
+}
+.lzcBox .lzcDateBox .lzcMonth .lzcMonthChild{
+	margin-top: 8px;
+	background-color: #ffffff;
+}
+.lzcBox .lzcDateBox .lzcMonth .lzcMonthTitle{
+	padding: 5px 0;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+.lzcBox .lzcDateBox .lzcMonth .lzcMonthTable{
+	width: 100%;
+	text-align: center;
+	border-collapse:collapse;
+}
+.lzcBox .lzcDateBox .lzcMonth .lzcMonthTable tr{
+}
+.lzcBox .lzcDateBox .lzcMonth .lzcMonthTable tr td{
+	cursor: pointer;
+	padding: 8px 0;
+}
+.lzcBox .lzcDateBox .lzcMonth .lzcSure{
+	padding: 5px 18px;
+	background-color: #ffffff;
+	border-top: 1px solid #ddd;
+	margin-top: 5px;
+	text-align: center;
+}
+.lzcBox .lzcDateBox .lzcMonth .lzcSure .lzcSureBtn{
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 100%;
+	border-radius: 3px;
+	padding: 8px 0;
+	color: #ffffff;
+	background-color: #3DB788;
+}
+.lzcActive{
+	color: #ffffff;
+	background-color: #3DB788;
+	border-radius: 5px 0 0 5px;
+}
+.lzcActiveCenter{
+	background-color: rgba(61,183,136,0.3);
+}
+.lzcActive2{
+	color: #ffffff;
+	background-color: #3DB788;
+	border-radius: 0 5px 5px 0;
 }
