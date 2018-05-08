@@ -7,6 +7,7 @@
 	top: 0;
 	left: 0;
 	background-color: rgba(0,0,0,0.5);
+	display: none;
 }
 .lzcBox .lzcDateBox{
 	height: 80%;
@@ -14,6 +15,24 @@
 	background-color: #eeeeee;
 	margin-top: 35%;
 	overflow-y: auto; 
+}
+.lzcBox .lzcDateBox .lzcTip{
+	width: 80%;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	padding: 10px 0;
+	margin-top: 10px;
+	margin-left: -40%;
+	border-radius: 3px;
+	background-color: #ffffff;
+	transition: 0.5s all;
+	opacity: 0;
+	text-align: center;
+	color: #FF9800;
+}
+.lzcBox .lzcDateBox .lzcTip span{
+	padding: 0 18px;
 }
 .lzcBox .lzcDateBox .lzcFixed{
 	position: fixed;
@@ -51,7 +70,7 @@
 	color: #3DB788;
 }
 .lzcBox .lzcDateBox .lzcMonth{
-	margin-top: 70px;
+	margin: 70px 0 50px;
 }
 .lzcBox .lzcDateBox .lzcMonth .lzcMonthChild{
 	margin-top: 8px;
@@ -74,17 +93,22 @@
 	padding: 8px 0;
 }
 .lzcBox .lzcDateBox .lzcMonth .lzcSure{
-	padding: 5px 18px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 5px 0;
 	background-color: #ffffff;
 	border-top: 1px solid #ddd;
 	margin-top: 5px;
 	text-align: center;
 }
 .lzcBox .lzcDateBox .lzcMonth .lzcSure .lzcSureBtn{
+
 	margin: 0;
 	padding: 0;
 	border: none;
-	width: 100%;
+	width: 90%;
 	border-radius: 3px;
 	padding: 8px 0;
 	color: #ffffff;
