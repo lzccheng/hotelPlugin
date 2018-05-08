@@ -8,6 +8,7 @@
 	left: 0;
 	background-color: rgba(0,0,0,0.5);
 	display: none;
+	z-index: 99999;
 }
 .lzcBox .lzcDateBox{
 	height: 80%;
@@ -126,4 +127,7 @@
 	color: #ffffff;
 	background-color: #3DB788;
 	border-radius: 0 5px 5px 0;
+}
+.lzcDisable{
+	color: #bbb;
 }

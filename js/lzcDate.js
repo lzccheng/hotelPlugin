@@ -41,8 +41,13 @@ window.lzcDatePlugin = (function(){
 			for(var d=0;d<lzcTdEl.length;d++){
 				(function(d){
 					if(lzcTdEl[d].innerText){
+						var datatime = Number(lzcTdEl[d].getAttribute('datatime'))+1000*60*60*24;
 						lzcTdEl[d].setAttribute('dataindex',d);
-						lzcTdEl[d].addEventListener('click', onTdClick);
+						if(new Date().getTime()<new Date(datatime).getTime()){
+							lzcTdEl[d].addEventListener('click', onTdClick);
+						}else{
+							that.addClass(lzcTdEl[d],'lzcDisable');
+						}
 					}
 				})(d);
 			}
